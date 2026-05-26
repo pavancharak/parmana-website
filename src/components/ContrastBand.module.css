@@ -1,0 +1,67 @@
+.band {
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  background: var(--bg-card);
+  padding: 1.5rem 1.5rem;
+}
+
+.inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.other,
+.parmana {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  padding: 1rem 1.5rem;
+}
+
+.other {
+  border-right: 1px solid var(--border);
+}
+
+.divider {
+  display: none;
+}
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.other .quote {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.parmana .label {
+  color: var(--accent);
+}
+
+.parmana .quote {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+  }
+
+  .other {
+    border-right: none;
+    border-bottom: 1px solid var(--border);
+  }
+}

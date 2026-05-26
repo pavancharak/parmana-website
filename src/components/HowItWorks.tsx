@@ -3,24 +3,24 @@ import styles from './HowItWorks.module.css'
 const steps = [
   {
     number: '01',
-    title: 'Your AI produces a signal',
+    title: 'Your AI recommends',
     description:
-      'Your model classifies, recommends, or flags something a credit score, a triage suggestion, a fraud risk score. That output lands in Parmana as a signal, not as a decision.',
-    detail: 'Parmana accepts signals from any source: LLMs, classifiers, rule engines, human reviewers.',
+      "The model does what it's good at: reads the situation and suggests an action.",
+    detail: 'Works with any AI model or automated system. The output is a suggestion, not a command.',
   },
   {
     number: '02',
-    title: 'Parmana checks your policy and signs the result',
+    title: 'Parmana decides',
     description:
-      'Parmana evaluates the signal against your policy the exact version you deployed and determines whether execution is allowed. The outcome, every input, and the policy version are hashed together and signed with a private key.',
-    detail: 'Same inputs, same policy version, same result. Always. That determinism is what makes the signature meaningful.',
+      "Your rules, not the AI, determine whether that action is allowed. If the conditions aren't met, it stops. Not a warning. An actual stop.",
+    detail: 'Same situation always produces the same outcome — regardless of which AI model you use.',
   },
   {
     number: '03',
-    title: 'Anyone can verify the record, forever',
+    title: 'The proof is recorded',
     description:
-      'The signed proof bundle travels with the decision. No database access needed, no call to your servers. Anyone holding your public key — an auditor, a regulator, a partner can verify that the record is authentic and unmodified.',
-    detail: "If any field was altered after signing, verification fails. That's the point.",
+      'Every decision is signed and saved. Anyone can later check that record is real and unchanged, without needing access to your systems.',
+    detail: "If the record was altered after it was saved, the check fails. That's the point.",
   },
 ]
 
@@ -29,10 +29,10 @@ export default function HowItWorks() {
     <section className={styles.section} id="how-it-works">
       <div className={styles.inner}>
         <div className={styles.label}>How it works</div>
-        <h2 className={styles.heading}>Three steps from signal to proof</h2>
+        <h2 className={styles.heading}>From suggestion to signed record</h2>
         <p className={styles.sub}>
-          Parmana sits between your AI and your execution layer. It doesn't replace the AI ,it
-          governs whether the AI's recommendation is allowed to become an action.
+          Parmana sits between your AI and your systems. The AI makes suggestions. Parmana decides
+          what's actually allowed to run.
         </p>
 
         <div className={styles.steps}>

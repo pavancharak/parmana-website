@@ -6,12 +6,12 @@ export default function CallToAction() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Start with a signed attestation in five minutes
+          Govern what your AI is allowed to do — and prove it.
         </h2>
         <p className={styles.sub}>
-          Governance isn't what you add after something goes wrong. It's what lets you prove
-          nothing went wrong. The quickstart gets you to a verifiable, cryptographically signed
-          decision record with a single function call.
+          The rules you set determine what your AI is and isn't allowed to do. Every decision
+          is saved in a way anyone can verify — so when someone asks what happened, you have
+          a real answer.
         </p>
 
         <div className={styles.install}>
@@ -34,7 +34,7 @@ export default function CallToAction() {
         </div>
 
         <p className={styles.note}>
-          Open source · Apache 2.0 · No cloud lock-in · Works offline
+          Open source. Signed, verifiable records for every decision.
         </p>
       </div>
     </section>

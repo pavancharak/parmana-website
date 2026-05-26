@@ -3,39 +3,39 @@ import styles from './UseCases.module.css'
 const cases = [
   {
     tag: 'Fintech',
-    title: 'Loan approved at 2:47am prove it was right',
+    title: 'Loan approval, 2:47am',
     description:
-      'Your AI approved a INR 240K disbursement overnight. No human reviewed it. When the customer calls, you need more than logs you need a signed record that proves which policy ran, what the inputs were, and that no one touched the record since.',
-  },
-  {
-    tag: 'Healthcare',
-    title: 'AI triage suggests escalation',
-    description:
-      'An AI flags a patient for urgent review. Parmana governs whether escalation is authorized, records the signal, the policy, and the outcome and produces evidence an auditor can verify without access to your production system.',
+      'An overnight automated approval, with a signed record you can show an auditor months later.',
   },
   {
     tag: 'Insurance',
-    title: 'Pre-authorization for a claim',
+    title: 'Insurance claim paid out',
     description:
-      'An underwriting model classifies a claim and recommends approval. Parmana checks the policy version, authorizes execution, and creates a tamper-evident record. If the decision is ever challenged, you can replay the exact governance state.',
+      "The payout runs only if the rules allow it, and the record can't be quietly edited afterward.",
   },
   {
-    tag: 'AI voice agents',
-    title: 'Voice agent escalation in a regulated call',
+    tag: 'Payments',
+    title: 'Payment authorized',
     description:
-      'An AI handles a customer call and recommends escalating to a human. Parmana determines whether escalation is allowed under your policy, logs it cryptographically, and keeps a record that survives a compliance review months later.',
+      'Money moves only when conditions are met, and the same request can never accidentally go through twice.',
+  },
+  {
+    tag: 'AI agents',
+    title: 'AI agent stopped in time',
+    description:
+      "An agent tried to take an action it shouldn't have. Parmana denied it before anything happened.",
   },
   {
     tag: 'Security ops',
-    title: 'Automated containment after an anomaly',
+    title: 'Security action contained',
     description:
-      "Your AI flags suspicious behavior and recommends isolating a system. Before any action fires, Parmana verifies the escalation is authorized, signs the execution record, and ensures the audit trail can't be silently altered after the fact.",
+      "Your AI flags suspicious activity and recommends isolating a system; Parmana confirms it's allowed and records it before anything runs.",
   },
   {
-    tag: 'Enterprise',
-    title: 'Approval chains with cryptographic receipts',
+    tag: 'Compliance',
+    title: 'Regulator asks "prove it"',
     description:
-      'Multi-step procurement or access-control approvals. Each decision in the chain is cryptographically signed and chained together. Any party internal or external can verify the full authorization history offline.',
+      'Months later, someone asks what happened and why. You hand them a record anyone can verify.',
   },
 ]
 
@@ -44,10 +44,10 @@ export default function UseCases() {
     <section className={styles.section} id="use-cases">
       <div className={styles.inner}>
         <div className={styles.label}>Use cases</div>
-        <h2 className={styles.heading}>Anywhere execution needs a paper trail that holds up</h2>
+        <h2 className={styles.heading}>Anywhere you need proof that the right thing happened</h2>
         <p className={styles.sub}>
-          Parmana is valuable the moment an AI-influenced action creates financial risk, compliance
-          exposure, or safety consequences and someone might later ask you to prove what happened.
+          Parmana is useful the moment an AI action could have real consequences — financial, legal,
+          or otherwise — and you might later need to explain exactly what happened and why.
         </p>
 
         <div className={styles.grid}>

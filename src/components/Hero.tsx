@@ -16,9 +16,9 @@ export default function Hero() {
         </h1>
 
         <p className={styles.sub}>
-          When an AI agent approves a loan, flags a patient, or triggers an action with real consequences,
-          Parmana signs the decision cryptographically so you can prove to auditors, regulators, or a
-          courtroom exactly what ran, what policy was in effect, and that no one changed the record afterward.
+          Most AI tools watch what your AI does and raise a flag when something looks off. Parmana goes
+          further: it decides whether the action is even allowed to run, and keeps a signed record you can
+          prove later. The AI can advise. It doesn't get the final say.
         </p>
 
         <div className={styles.ctas}>
@@ -39,9 +39,9 @@ export default function Hero() {
         </div>
 
         <div className={styles.tagline}>
-          <span className={styles.mono}>AI may recommend.</span>
+          <span className={styles.mono}>The AI can advise.</span>
           <span className={styles.sep}>·</span>
-          <span className={styles.mono}>Parmana determines whether execution is allowed.</span>
+          <span className={styles.mono}>Parmana decides what's allowed to run.</span>
         </div>
       </div>
     </section>

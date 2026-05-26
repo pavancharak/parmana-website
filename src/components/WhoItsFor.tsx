@@ -3,21 +3,21 @@ import styles from './WhoItsFor.module.css'
 const audiences = [
   {
     icon: '\u{1F4B3}',
-    title: 'Fintech & financial teams',
+    title: 'Teams handling money or sensitive actions',
     description:
-      "You're shipping loan approvals, payment authorization, or trading workflows. Regulations like MiFID II, SOC 2, and PCI require you to prove a specific policy governed a specific transaction. Logs don't fully satisfy that. A signed, replayable attestation does.",
+      'If your AI approves loans, authorizes payments, or moves funds, "the model decided" isn\'t an answer you can give an auditor. Parmana gives you a signed record of what was allowed and why.',
   },
   {
     icon: '\u{1F916}',
-    title: 'AI platform & product teams',
+    title: 'Teams building AI agents that do things',
     description:
-      'Your agent can send money, modify records, or trigger real-world actions. "The model decided" is not an audit trail. You need a layer that records what authorized the action and makes that record tamper-evident from the moment it\'s created.',
+      "When your agent can change records or trigger real actions, you need something separate from the AI that decides what's actually permitted.",
   },
   {
     icon: '\u{1F3E5}',
     title: 'Regulated industries',
     description:
-      'Healthcare, insurance, government, enterprise compliance any domain where an auditor, regulator, or legal team might one day ask: "prove that the right policy ran, with the right inputs, and that nobody changed the record." That question always comes at the worst possible time.',
+      'Healthcare, insurance, finance, government. Anywhere someone may later ask you to prove the right rule ran, on the right inputs, and that no one changed the record afterward.',
   },
 ]
 
