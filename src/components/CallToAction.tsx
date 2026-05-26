@@ -6,11 +6,11 @@ export default function CallToAction() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Govern what your AI is allowed to do — and prove it.
+          Govern what your AI is allowed to do and prove it.
         </h2>
         <p className={styles.sub}>
           The rules you set determine what your AI is and isn't allowed to do. Every decision
-          is saved in a way anyone can verify — so when someone asks what happened, you have
+          is saved in a way anyone can verify so when someone asks what happened, you have
           a real answer.
         </p>
 

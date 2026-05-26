@@ -11,7 +11,7 @@ export default function ContrastBand() {
         <div className={styles.divider} aria-hidden="true" />
         <div className={styles.parmana}>
           <span className={styles.label}>Parmana says:</span>
-          <span className={styles.quote}>"We decide whether that action is allowed to run — and we can prove it."</span>
+          <span className={styles.quote}>"We decide whether that action is allowed to run and we can prove it."</span>
         </div>
       </div>
     </div>

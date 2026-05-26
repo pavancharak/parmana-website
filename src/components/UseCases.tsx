@@ -46,8 +46,8 @@ export default function UseCases() {
         <div className={styles.label}>Use cases</div>
         <h2 className={styles.heading}>Anywhere you need proof that the right thing happened</h2>
         <p className={styles.sub}>
-          Parmana is useful the moment an AI action could have real consequences — financial, legal,
-          or otherwise — and you might later need to explain exactly what happened and why.
+          Parmana is useful the moment an AI action could have real consequences financial, legal,
+          or otherwise and you might later need to explain exactly what happened and why.
         </p>
 
         <div className={styles.grid}>
