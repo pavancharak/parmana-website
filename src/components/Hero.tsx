@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
 
         <h1 className={styles.headline}>
-          Prove exactly what your AI decided <br />
+          Prove exactly what your AI was allowed to do <br />
           <span className={styles.accent}>before anyone asks you to.</span>
         </h1>
 
