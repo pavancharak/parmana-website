@@ -28,9 +28,9 @@ export default function UseCases() {
     <section className={styles.section} id="use-cases">
       <div className={styles.inner}>
         <p className={styles.eyebrow}>USE CASES</p>
-        <h2 className={styles.heading}>Things competitors can't claim.</h2>
+        <h2 className={styles.heading}>Guarantees, not features.</h2>
         <p className={styles.sub}>
-          These aren't features. They're structural guarantees things that hold because of
+          These aren't features. They're structural guarantees — things that hold because of
           how Parmana works, not because we say so.
         </p>
 
