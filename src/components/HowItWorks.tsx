@@ -23,7 +23,7 @@ const steps = [
   {
     id: '04',
     title: 'Sign',
-    desc: "Every decision gets an Ed25519 signature — a proof that can't be forged.",
+    desc: "Every decision gets an Ed25519 signature a proof that can't be forged.",
     icon: '◉',
   },
   {
@@ -42,7 +42,7 @@ export default function HowItWorks() {
         <h2 className={styles.heading}>From AI proposal to verified record</h2>
         <p className={styles.sub}>
           Parmana sits between your AI and your systems. The AI advises. Parmana decides
-          what's allowed to run — and proves it.
+          what's allowed to run and proves it.
         </p>
 
         <div className={styles.flow}>

@@ -2,7 +2,7 @@ import styles from './ForDevelopers.module.css'
 
 const snippet = `import { parmana } from '@parmanasystems/core'
 
-// illustrative — swap in your real SDK call
+// illustrative swap in your real SDK call
 const decision = await parmana.execute({
   action:  'approve_claim',
   context: { claim_id: 'CLM-04891', amount: 4200 },
@@ -21,7 +21,7 @@ export default function ForDevelopers() {
         <h2 className={styles.heading}>One install. One function call.</h2>
         <p className={styles.sub}>
           Add Parmana to any Node.js or TypeScript project. It wraps around your existing
-          AI calls — you keep your model, your prompts, your logic.
+          AI calls you keep your model, your prompts, your logic.
         </p>
 
         <div className={styles.installLine}>
