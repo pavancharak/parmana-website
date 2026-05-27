@@ -2,25 +2,35 @@ import styles from './HowItWorks.module.css'
 
 const steps = [
   {
-    number: '01',
-    title: 'Your AI recommends',
-    description:
-      "The model does what it's good at: reads the situation and suggests an action.",
-    detail: 'Works with any AI model or automated system. The output is a suggestion, not a command.',
+    id: '01',
+    title: 'AI proposes',
+    desc: 'The model reads the situation and recommends an action. It can reason freely.',
+    icon: '◎',
   },
   {
-    number: '02',
-    title: 'Parmana decides',
-    description:
-      "Your rules, not the AI, determine whether that action is allowed. If the conditions aren't met, it stops. Not a warning. An actual stop.",
-    detail: 'Same situation always produces the same outcome — regardless of which AI model you use.',
+    id: '02',
+    title: 'Policy check',
+    desc: 'Parmana evaluates the proposal against your rules — before it runs.',
+    icon: '⊞',
   },
   {
-    number: '03',
-    title: 'The proof is recorded',
-    description:
-      'Every decision is signed and saved. Anyone can later check that record is real and unchanged, without needing access to your systems.',
-    detail: "If the record was altered after it was saved, the check fails. That's the point.",
+    id: '03',
+    title: 'Allow or Block',
+    desc: 'If the conditions are met, the action proceeds. If not, it stops. Fails closed. Not a warning.',
+    icon: '◈',
+    highlight: true,
+  },
+  {
+    id: '04',
+    title: 'Sign',
+    desc: 'Every decision gets an Ed25519 signature — a proof that can\'t be forged.',
+    icon: '◉',
+  },
+  {
+    id: '05',
+    title: 'Append-only log',
+    desc: 'The signed record is written and can only be added to — never quietly changed.',
+    icon: '≡',
   },
 ]
 
@@ -28,54 +38,58 @@ export default function HowItWorks() {
   return (
     <section className={styles.section} id="how-it-works">
       <div className={styles.inner}>
-        <div className={styles.label}>How it works</div>
-        <h2 className={styles.heading}>From suggestion to signed record</h2>
+        <p className={styles.eyebrow}>HOW IT WORKS</p>
+        <h2 className={styles.heading}>From AI proposal to verified record</h2>
         <p className={styles.sub}>
-          Parmana sits between your AI and your systems. The AI makes suggestions. Parmana decides
-          what's actually allowed to run.
+          Parmana sits between your AI and your systems. The AI advises. Parmana decides
+          what's allowed to run — and proves it.
         </p>
 
-        <div className={styles.steps}>
-          {steps.map((s, i) => (
-            <div key={s.number} className={styles.step}>
-              <div className={styles.stepLeft}>
-                <div className={styles.stepNumber}>{s.number}</div>
-                {i < steps.length - 1 && <div className={styles.connector} aria-hidden="true" />}
+        <div className={styles.flow}>
+          {steps.map((step, i) => (
+            <div key={step.id} className={styles.stepWrapper}>
+              <div className={`${styles.step} ${step.highlight ? styles.stepHighlight : ''}`}>
+                <div className={styles.stepIcon} aria-hidden="true">{step.icon}</div>
+                <div className={styles.stepId}>{step.id}</div>
+                <h3 className={styles.stepTitle}>{step.title}</h3>
+                <p className={styles.stepDesc}>{step.desc}</p>
               </div>
-              <div className={styles.stepRight}>
-                <h3 className={styles.stepTitle}>{s.title}</h3>
-                <p className={styles.stepDesc}>{s.description}</p>
-                <p className={styles.stepDetail}>{s.detail}</p>
-              </div>
+              {i < steps.length - 1 && (
+                <div className={styles.arrow} aria-hidden="true">
+                  <svg width="20" height="16" viewBox="0 0 20 16" fill="none">
+                    <path d="M0 8h16M11 3l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                </div>
+              )}
             </div>
           ))}
         </div>
 
         <div className={styles.codeBlock}>
           <div className={styles.codeHeader}>
-            <span className={styles.codeLabel}>Quick look ,one function call</span>
+            <span className={styles.codeLabel}>ILLUSTRATIVE SDK CALL</span>
             <span className={styles.codeLang}>TypeScript</span>
           </div>
           <pre className={styles.code}>{`import { executeFromSignals } from '@parmanasystems/core'
 
-const attestation = await executeFromSignals(
+const result = await executeFromSignals(
   {
-    policyId:      'loan-approval',
+    policyId: 'claims-auto-approve',
     policyVersion: '2.1.0',
     signals: {
-      credit_score:         712,
-      dti_ratio:            0.31,
-      model_recommendation: 'approve',  // from your LLM
+      claim_amount:         4200,
+      claimant_verified:    true,
+      model_recommendation: 'approve',   // from your LLM
     },
   },
-  signer,
-  verifier,
-  replayStore
+  { signer, verifier, replayStore }
 )
 
-// attestation.signature : Ed25519 over every field above
-// Anyone with the public key can verify this, offline, forever`}</pre>
+// result.decision  → 'ALLOWED' | 'BLOCKED'
+// result.signature → Ed25519 over every field above
+// result.logEntry  → append-only record; verify offline with public key`}</pre>
         </div>
+
       </div>
     </section>
   )

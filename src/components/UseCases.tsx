@@ -2,40 +2,24 @@ import styles from './UseCases.module.css'
 
 const cases = [
   {
-    tag: 'Fintech',
-    title: 'Loan approval, 2:47am',
-    description:
-      'An overnight automated approval, with a signed record you can show an auditor months later.',
+    tag: 'Claims & insurance',
+    title: 'Hand the proof to your adversary.',
+    body: 'When a denied claim is disputed, you hand over a signed record the claimant can verify themselves — with only a public key, no access to your systems. The proof doesn\'t depend on trusting you.',
   },
   {
-    tag: 'Insurance',
-    title: 'Insurance claim paid out',
-    description:
-      "The payout runs only if the rules allow it, and the record can't be quietly edited afterward.",
+    tag: 'Regulatory audit',
+    title: 'Rewind a decision years later. Identical result.',
+    body: 'A regulator asks what happened in 2024. You replay the exact decision — same inputs, same rules, same signature. The deterministic output is the proof. No reconstruction, no narrative.',
   },
   {
-    tag: 'Payments',
-    title: 'Payment authorized',
-    description:
-      'Money moves only when conditions are met, and the same request can never accidentally go through twice.',
+    tag: 'AI containment',
+    title: "Prove the AI couldn't have done it.",
+    body: "Your AI tried something it wasn't allowed to do. Parmana blocked it before it ran and logged the denial. Now you can prove the action never executed — with a signed record no one can quietly delete.",
   },
   {
-    tag: 'AI agents',
-    title: 'AI agent stopped in time',
-    description:
-      "An agent tried to take an action it shouldn't have. Parmana denied it before anything happened.",
-  },
-  {
-    tag: 'Security ops',
-    title: 'Security action contained',
-    description:
-      "Your AI flags suspicious activity and recommends isolating a system; Parmana confirms it's allowed and records it before anything runs.",
-  },
-  {
-    tag: 'Compliance',
-    title: 'Regulator asks "prove it"',
-    description:
-      'Months later, someone asks what happened and why. You hand them a record anyone can verify.',
+    tag: 'Air-gapped verification',
+    title: 'Verify with the internet unplugged.',
+    body: "Verification requires no server, no API call, no database. Hand someone a record and a public key. They check it in a terminal, offline, years from now. It either holds or it doesn't.",
   },
 ]
 
@@ -43,11 +27,11 @@ export default function UseCases() {
   return (
     <section className={styles.section} id="use-cases">
       <div className={styles.inner}>
-        <div className={styles.label}>Use cases</div>
-        <h2 className={styles.heading}>Anywhere you need proof that the right thing happened</h2>
+        <p className={styles.eyebrow}>USE CASES</p>
+        <h2 className={styles.heading}>Things competitors can't claim.</h2>
         <p className={styles.sub}>
-          Parmana is useful the moment an AI action could have real consequences financial, legal,
-          or otherwise and you might later need to explain exactly what happened and why.
+          These aren't features. They're structural guarantees — things that hold because of
+          how Parmana works, not because we say so.
         </p>
 
         <div className={styles.grid}>
@@ -55,7 +39,7 @@ export default function UseCases() {
             <div key={c.title} className={styles.card}>
               <div className={styles.tag}>{c.tag}</div>
               <h3 className={styles.cardTitle}>{c.title}</h3>
-              <p className={styles.cardText}>{c.description}</p>
+              <p className={styles.cardBody}>{c.body}</p>
             </div>
           ))}
         </div>

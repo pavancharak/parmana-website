@@ -5,20 +5,21 @@ export default function Hero() {
     <section className={styles.section}>
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.inner}>
-        <div className={styles.badge}>
-          <span className={styles.dot} />
-          Open source · Apache 2.0
+
+        <div className={styles.eyebrow}>
+          <span className={styles.eyebrowDot} aria-hidden="true" />
+          GOVERNED AI EXECUTION
         </div>
 
         <h1 className={styles.headline}>
-          Prove exactly what your AI was allowed to do <br />
-          <span className={styles.accent}>before anyone asks you to.</span>
+          Make AI safer.<br />
+          <span className={styles.headlineLight}>Without holding it back.</span>
         </h1>
 
         <p className={styles.sub}>
-          Most AI tools watch what your AI does and raise a flag when something looks off. Parmana goes
-          further: it decides whether the action is even allowed to run, and keeps a signed record you can
-          prove later. The AI can advise. It doesn't get the final say.
+          AI reasons freely. Parmana controls what actually runs — checking every action
+          against your rules, blocking what isn't allowed, and signing the result so anyone
+          can verify exactly what happened. With nothing but a key.
         </p>
 
         <div className={styles.ctas}>
@@ -28,21 +29,27 @@ export default function Hero() {
             rel="noopener noreferrer"
             className={styles.primary}
           >
-            Read the docs
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+            Start building
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+              <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="#how-it-works" className={styles.secondary}>
-            See how it works
+          <a href="#demos" className={styles.secondary}>
+            See it verify itself
           </a>
         </div>
 
-        <div className={styles.tagline}>
-          <span className={styles.mono}>The AI can advise.</span>
-          <span className={styles.sep}>·</span>
-          <span className={styles.mono}>Parmana decides what's allowed to run.</span>
+        <div className={styles.proofStrip}>
+          <span className={styles.proofItem}>
+            <span className={styles.proofDot} style={{ background: 'var(--green)' }} />
+            Open source · Apache-2.0
+          </span>
+          <span className={styles.proofSep} aria-hidden="true" />
+          <span className={styles.proofItem}>Self-hosted, nothing phones home</span>
+          <span className={styles.proofSep} aria-hidden="true" />
+          <span className={styles.proofItem}>Ed25519 · append-only · offline-verifiable</span>
         </div>
+
       </div>
     </section>
   )
