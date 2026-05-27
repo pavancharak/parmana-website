@@ -7,7 +7,7 @@ const points = [
   },
   {
     label: 'Your keys',
-    detail: 'You generate and hold the signing keys. There's no Parmana account, no cloud key management, no third-party dependency.',
+    detail: "You generate and hold the signing keys. There's no Parmana account, no cloud key management, no third-party dependency.",
   },
   {
     label: 'Your audit trail',

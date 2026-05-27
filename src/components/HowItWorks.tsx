@@ -23,7 +23,7 @@ const steps = [
   {
     id: '04',
     title: 'Sign',
-    desc: 'Every decision gets an Ed25519 signature a proof that can't be forged.',
+    desc: "Every decision gets an Ed25519 signature — a proof that can't be forged.",
     icon: '◉',
   },
   {
