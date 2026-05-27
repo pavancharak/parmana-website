@@ -24,7 +24,7 @@ export default function ForDevelopers() {
           AI calls you keep your model, your prompts, your logic.
         </p>
 
-        <div className={styles.installLine}> 
+        <div className={styles.installLine}>  
           <span className={styles.prompt}>$</span>
           <code className={styles.cmd}>npm install @parmanasystems/core</code>
           <button
