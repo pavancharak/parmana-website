@@ -48,7 +48,7 @@ export default function Problem() {
           <div className={`${styles.contrastSide} ${styles.contrastRight}`}>
             <span className={styles.contrastLabel}>Parmana says:</span>
             <span className={styles.contrastQuote}>
-              "I don't decide what's allowed — you already did. I enforce it, exactly, and I can prove it."
+              "I don't decide what's allowed , you already did. I enforce it, exactly, and I can prove it."
             </span>
           </div>
         </div>

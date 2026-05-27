@@ -30,7 +30,7 @@ export default function UseCases() {
         <p className={styles.eyebrow}>USE CASES</p>
         <h2 className={styles.heading}>Guarantees, not features.</h2>
         <p className={styles.sub}>
-          These aren't features. They're structural guarantees — things that hold because of
+          These aren't features. They're structural guarantees things that hold because of
           how Parmana works, not because we say so.
         </p>
 
