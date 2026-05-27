@@ -27,7 +27,7 @@ export default function Problem() {
               allowed to do, what it actually did, or whether the record was changed after the fact.
             </p>
           </div>
-          <div className={styles.card}>
+          <div className={styles.card}>  
             <div className={styles.cardNum}>03</div>
             <h3 className={styles.cardTitle}>Observation isn't governance</h3>
             <p className={styles.cardText}>
