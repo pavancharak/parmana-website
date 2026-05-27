@@ -31,6 +31,7 @@
   font-size: 1.05rem;
   color: var(--text-muted);
   font-weight: 300;
+  max-width: 640px;
   margin-bottom: 3rem;
   line-height: 1.7;
 }
@@ -68,7 +69,7 @@
 }
 
 .cardDetail {
-  font-size: 0.88rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
   font-weight: 300;
@@ -82,7 +83,7 @@
   border: 1px solid var(--border);
   background: var(--bg-card);
   border-radius: var(--radius-lg);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.6;
   font-weight: 300;
@@ -100,6 +101,9 @@
 }
 
 @media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
   .grid {
     grid-template-columns: 1fr;
   }

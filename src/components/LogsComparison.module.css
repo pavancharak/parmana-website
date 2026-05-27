@@ -30,6 +30,8 @@
   font-size: 1.05rem;
   color: var(--text-muted);
   font-weight: 300;
+  max-width: 640px;
+  line-height: 1.65;
   margin-bottom: 3rem;
 }
 
@@ -187,5 +189,11 @@
   }
   .cards {
     display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.25rem;
   }
 }

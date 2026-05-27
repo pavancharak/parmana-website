@@ -149,3 +149,9 @@
   color: var(--text) !important;
   text-decoration: none !important;
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
+}

@@ -75,13 +75,16 @@
 }
 
 .cardBody {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.72;
   font-weight: 300;
 }
 
 @media (max-width: 720px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
   .grid {
     grid-template-columns: 1fr;
   }

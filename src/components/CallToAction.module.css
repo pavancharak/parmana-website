@@ -102,3 +102,9 @@
   color: var(--text-dim);
   letter-spacing: 0.06em;
 }
+
+@media (max-width: 640px) {
+  .section {
+    padding: 5rem 1.25rem;
+  }
+}

@@ -27,9 +27,12 @@
   /* Amber — attention */
   --amber:       #FCD34D;
 
-  /* Text */
+  /* Text — three legibility tiers
+     Primary   --text        near-white paper tone  → headings, key lines
+     Secondary --text-muted  comfortable light gray → body paragraphs, subheads
+     Tertiary  --text-dim    dim warm gray          → eyebrow labels, footnotes only */
   --text:        #F5F1EB;
-  --text-muted:  #9A948C;
+  --text-muted:  #C0BAB3;
   --text-dim:    #5A5550;
 
   /* Typography */

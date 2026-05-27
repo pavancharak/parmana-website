@@ -67,7 +67,7 @@
 }
 
 .cardText {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--text-muted);
   line-height: 1.7;
   font-weight: 300;
@@ -133,5 +133,11 @@
   .contrastDiv {
     width: 100%;
     height: 1px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.25rem;
   }
 }

@@ -102,7 +102,7 @@
 }
 
 .stepDesc {
-  font-size: 0.8rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.55;
   font-weight: 300;
@@ -178,5 +178,11 @@
   }
   .arrow {
     padding: 0.3rem 0 0.3rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 4rem 1.25rem;
   }
 }

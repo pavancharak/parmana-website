@@ -70,13 +70,16 @@
 }
 
 .pillarBody {
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   color: var(--text-muted);
   line-height: 1.65;
   font-weight: 300;
 }
 
 @media (max-width: 900px) {
+  .section {
+    padding: 4rem 1.25rem;
+  }
   .grid {
     grid-template-columns: repeat(2, 1fr);
   }
