@@ -33,13 +33,13 @@ export default function Demos() {
         {/* Keypair status bar */}
         <div className={styles.cryptoBar}>
           {!cryptoSetup && (
-            <span className={styles.cryptoLoading}>◐ Generating keypair in your browser…</span>
+            <span className={styles.cryptoLoading}>Generating keypair in your browser…</span>
           )}
           {cryptoSetup && mode === 'Ed25519' && (
             <>
               <span className={styles.cryptoMode}>
                 <span className={styles.cryptoDot} />
-                Ed25519 keypair — generated this session, lives only in your browser
+                Ed25519 keypair generated this session, lives only in your browser
               </span>
               {pubKeyShort && (
                 <span className={styles.cryptoPub}>
@@ -50,7 +50,7 @@ export default function Demos() {
           )}
           {cryptoSetup && mode === 'SHA256' && (
             <span className={styles.cryptoFallback}>
-              ⚠ Your browser doesn't support Ed25519 — using SHA-256 hash comparison instead. Tamper-detection still works; this is not a cryptographic signature.
+              ⚠ Your browser doesn't support Ed25519 using SHA-256 hash comparison instead. Tamper-detection still works; this is not a cryptographic signature.
             </span>
           )}
         </div>

@@ -12,7 +12,7 @@ export default function CallToAction() {
         <p className={styles.sub}>
           Self-hosted, open source, nothing phones home. The rules you set determine what
           runs. Every decision is signed and logged so when someone asks what happened,
-          you have a real answer — not a dashboard.
+          you have a real answer not a dashboard.
         </p>
 
         <div className={styles.ctas}>

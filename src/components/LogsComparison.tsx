@@ -10,7 +10,7 @@ const rows = [
   {
     question: 'Can it stop a bad action',
     logs: 'No',
-    parmana: 'Yes — fails closed',
+    parmana: 'Yes fails closed',
     parmanaBold: true,
   },
   {
@@ -22,7 +22,7 @@ const rows = [
   {
     question: 'Under tampering',
     logs: "Silently edited — you'd never know",
-    parmana: 'Proof breaks visibly — verification fails',
+    parmana: 'Proof breaks visibly verification fails',
     parmanaBold: true,
   },
   {

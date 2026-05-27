@@ -19,12 +19,12 @@ const pillars = [
   {
     icon: '≡',
     title: 'Append-only log',
-    body: 'Records can be added but not deleted or changed. Tampering is detectable — verification breaks visibly.',
+    body: 'Records can be added but not deleted or changed. Tampering is detectable verification breaks visibly.',
   },
   {
     icon: '⊕',
     title: '14 worked examples',
-    body: 'Claims approval, healthcare triage, fraud detection, agentic containment — concrete examples you can run and inspect.',
+    body: 'Claims approval, healthcare triage, fraud detection, agentic containment concrete examples you can run and inspect.',
   },
 ]
 

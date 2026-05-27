@@ -28,7 +28,7 @@ function evaluatePolicy(action: string, amount: number): { outcome: Outcome; rea
   }
   return {
     outcome: 'BLOCKED',
-    reason: `$${amount.toLocaleString()} exceeds $5,000 — requires human review before action`,
+    reason: `$${amount.toLocaleString()} exceeds INR 5,000 requires human review before action`,
   }
 }
 

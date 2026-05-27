@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         <p className={styles.sub}>
-          AI reasons freely. Parmana controls what actually runs — checking every action
+          AI reasons freely. Parmana controls what actually runs checking every action
           against your rules, blocking what isn't allowed, and signing the result so anyone
           can verify exactly what happened. With nothing but a key.
         </p>

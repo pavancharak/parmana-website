@@ -3,7 +3,7 @@ import type { CryptoSetup } from '../lib/crypto'
 import { signRecord } from '../lib/crypto'
 import styles from './DemoRewind.module.css'
 
-// Fixed record — no Date.now(), no Math.random().
+// Fixed record no Date.now(), no Math.random().
 // Same inputs → same signature, every time.
 const FIXED_RECORD = JSON.stringify(
   {
@@ -59,7 +59,7 @@ export default function DemoRewind({ cryptoSetup }: Props) {
         <div className={styles.demoId}>DEMO C</div>
         <h3 className={styles.title}>Rewind</h3>
         <p className={styles.desc}>
-          Same input. Same rules. Same signature — every time.
+          Same input. Same rules. Same signature every time.
           {' '}Run this again years from now and get the exact same proof.
         </p>
       </div>

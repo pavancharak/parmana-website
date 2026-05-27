@@ -7,7 +7,7 @@ const promises = [
   },
   {
     heading: "You don't have to take our word for it",
-    body: 'Each decision comes with a signed proof anyone can verify on their own. Trust doesn\'t depend on trusting us.',
+    body: 'Each decision comes with a signed proof anyone can verify on their own. Trust doesn't depend on trusting us.',
   },
   {
     heading: "A decision can't run twice by accident",

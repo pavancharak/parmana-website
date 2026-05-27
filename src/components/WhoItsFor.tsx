@@ -5,7 +5,7 @@ const audiences = [
     icon: '\u{1F4B3}',
     title: 'Teams handling money or sensitive actions',
     description:
-      'If your AI approves loans, authorizes payments, or moves funds, "the model decided" isn\'t an answer you can give an auditor. Parmana gives you a signed record of what was allowed and why.',
+      'If your AI approves loans, authorizes payments, or moves funds, "the model decided" isn't an answer you can give an auditor. Parmana gives you a signed record of what was allowed and why.',
   },
   {
     icon: '\u{1F916}',

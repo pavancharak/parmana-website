@@ -7,7 +7,7 @@ const points = [
   },
   {
     label: 'Your keys',
-    detail: 'You generate and hold the signing keys. There\'s no Parmana account, no cloud key management, no third-party dependency.',
+    detail: 'You generate and hold the signing keys. There's no Parmana account, no cloud key management, no third-party dependency.',
   },
   {
     label: 'Your audit trail',
@@ -43,7 +43,7 @@ export default function DataSovereignty() {
           <span className={styles.calloutIcon} aria-hidden="true">◎</span>
           <div>
             <strong className={styles.calloutStrong}>Nothing phones home.</strong>
-            {' '}No telemetry, no analytics, no license checks. The code is Apache-2.0 — inspect every line.
+            {' '}No telemetry, no analytics, no license checks. The code is Apache-2.0 : inspect every line.
           </div>
         </div>
       </div>

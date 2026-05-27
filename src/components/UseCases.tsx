@@ -4,17 +4,17 @@ const cases = [
   {
     tag: 'Claims & insurance',
     title: 'Hand the proof to your adversary.',
-    body: 'When a denied claim is disputed, you hand over a signed record the claimant can verify themselves — with only a public key, no access to your systems. The proof doesn\'t depend on trusting you.',
+    body: 'When a denied claim is disputed, you hand over a signed record the claimant can verify themselves with only a public key, no access to your systems. The proof doesn\'t depend on trusting you.',
   },
   {
     tag: 'Regulatory audit',
     title: 'Rewind a decision years later. Identical result.',
-    body: 'A regulator asks what happened in 2024. You replay the exact decision — same inputs, same rules, same signature. The deterministic output is the proof. No reconstruction, no narrative.',
+    body: 'A regulator asks what happened in 2024. You replay the exact decision same inputs, same rules, same signature. The deterministic output is the proof. No reconstruction, no narrative.',
   },
   {
     tag: 'AI containment',
     title: "Prove the AI couldn't have done it.",
-    body: "Your AI tried something it wasn't allowed to do. Parmana blocked it before it ran and logged the denial. Now you can prove the action never executed — with a signed record no one can quietly delete.",
+    body: "Your AI tried something it wasn't allowed to do. Parmana blocked it before it ran and logged the denial. Now you can prove the action never executed with a signed record no one can quietly delete.",
   },
   {
     tag: 'Air-gapped verification',
@@ -30,7 +30,7 @@ export default function UseCases() {
         <p className={styles.eyebrow}>USE CASES</p>
         <h2 className={styles.heading}>Things competitors can't claim.</h2>
         <p className={styles.sub}>
-          These aren't features. They're structural guarantees — things that hold because of
+          These aren't features. They're structural guarantees things that hold because of
           how Parmana works, not because we say so.
         </p>
 

@@ -16,7 +16,7 @@ export default function Problem() {
             <h3 className={styles.cardTitle}>AI is handed real authority</h3>
             <p className={styles.cardText}>
               Approving claims. Flagging fraud. Routing medical triage. These aren't suggestions
-              anymore — they're actions with real consequences.
+              anymore they're actions with real consequences.
             </p>
           </div>
           <div className={styles.card}>
@@ -48,7 +48,7 @@ export default function Problem() {
           <div className={`${styles.contrastSide} ${styles.contrastRight}`}>
             <span className={styles.contrastLabel}>Parmana says:</span>
             <span className={styles.contrastQuote}>
-              "We decide whether that action is allowed to run — and we can prove it."
+              "We decide whether that action is allowed to run and we can prove it."
             </span>
           </div>
         </div>

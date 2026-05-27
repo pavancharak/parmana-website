@@ -10,7 +10,7 @@ const steps = [
   {
     id: '02',
     title: 'Policy check',
-    desc: 'Parmana evaluates the proposal against your rules — before it runs.',
+    desc: 'Parmana evaluates the proposal against your rules before it runs.',
     icon: '⊞',
   },
   {
@@ -23,13 +23,13 @@ const steps = [
   {
     id: '04',
     title: 'Sign',
-    desc: 'Every decision gets an Ed25519 signature — a proof that can\'t be forged.',
+    desc: 'Every decision gets an Ed25519 signature a proof that can't be forged.',
     icon: '◉',
   },
   {
     id: '05',
     title: 'Append-only log',
-    desc: 'The signed record is written and can only be added to — never quietly changed.',
+    desc: 'The signed record is written and can only be added to never quietly changed.',
     icon: '≡',
   },
 ]
