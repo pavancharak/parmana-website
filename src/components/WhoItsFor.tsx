@@ -11,7 +11,7 @@ const audiences = [
     icon: '\u{1F916}',
     title: 'Teams building AI agents that do things',
     description:
-      "When your agent can change records or trigger real actions, you need something separate from the AI that decides what's actually permitted.",
+      "When your agent can change records or trigger real actions, your rules — not the AI — should determine what's permitted. Parmana enforces those rules and proves every decision.",
   },
   {
     icon: '\u{1F3E5}',

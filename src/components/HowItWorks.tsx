@@ -41,8 +41,8 @@ export default function HowItWorks() {
         <p className={styles.eyebrow}>HOW IT WORKS</p>
         <h2 className={styles.heading}>From AI proposal to verified record</h2>
         <p className={styles.sub}>
-          Parmana sits between your AI and your systems. The AI advises. Parmana decides
-          what's allowed to run and proves it.
+          Parmana sits between your AI and your systems. The AI advises. Your rules
+          determine what runs — Parmana enforces them and proves it.
         </p>
 
         <div className={styles.flow}>
