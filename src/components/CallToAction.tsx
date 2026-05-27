@@ -6,13 +6,10 @@ export default function CallToAction() {
       <div className={styles.glow} aria-hidden="true" />
       <div className={styles.inner}>
         <h2 className={styles.heading}>
-          Govern what your AI is allowed to do.<br />
-          <span className={styles.headingMuted}>And prove it.</span>
+          Deploy the AI you'd otherwise be afraid to.
         </h2>
         <p className={styles.sub}>
-          Self-hosted, open source, nothing phones home. The rules you set determine what
-          runs. Every decision is signed and logged so when someone asks what happened,
-          you have a real answer not a dashboard.
+          Give it room to think. Keep control of what it does.
         </p>
 
         <div className={styles.ctas}>
