@@ -17,7 +17,7 @@ export default function Hero() {
         </h1>
 
         <p className={styles.sub}>
-          AI reasons freely. Parmana controls what actually runs checking every action
+          AI reasons freely. Parmana controls what actually runs — checking every action
           against your rules, blocking what isn't allowed, and signing the result so anyone
           can verify exactly what happened. With nothing but a key.
         </p>
@@ -34,8 +34,8 @@ export default function Hero() {
               <path d="M2.5 7h9M8 3.5l3.5 3.5L8 10.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
             </svg>
           </a>
-          <a href="#demos" className={styles.secondary}>
-            See it verify itself
+          <a href="#how-it-works" className={styles.secondary}>
+            How it works
           </a>
         </div>
 
