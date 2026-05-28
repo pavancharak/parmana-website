@@ -1,6 +1,5 @@
 .section {
-  padding: 6rem 1.5rem;
-  background: var(--bg-surface);
+  padding: 96px 32px;
 }
 
 .inner {
@@ -10,101 +9,112 @@
 
 .eyebrow {
   font-family: var(--mono);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--text-dim);
-  margin-bottom: 1.25rem;
-}
-
-.heading {
-  font-family: var(--serif);
-  font-size: clamp(1.85rem, 3.5vw, 2.6rem);
+  font-size: 11px;
   font-weight: 400;
-  color: var(--text);
-  margin-bottom: 0.85rem;
-  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  letter-spacing: 0.13em;
+  color: var(--accent);
+  margin-bottom: 20px;
 }
 
-.sub {
-  font-size: 1.05rem;
-  color: var(--text-muted);
-  font-weight: 300;
-  max-width: 640px;
-  margin-bottom: 3rem;
-  line-height: 1.7;
+.h2 {
+  font-family: var(--serif);
+  font-size: clamp(26px, 3.5vw, 42px);
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.015em;
+  max-width: var(--max-w-text);
+}
+
+.body {
+  font-family: var(--sans);
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  margin-bottom: 48px;
+  max-width: 520px;
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
-  border-radius: var(--radius-lg);
+  border-radius: 6px;
   overflow: hidden;
-  margin-bottom: 2rem;
+  margin-bottom: 28px;
 }
 
-.card {
-  background: var(--bg-card);
-  padding: 1.75rem;
+.cell {
+  background: var(--bg);
+  padding: 28px 26px;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
+  gap: 10px;
+  transition: background 0.18s;
 }
 
-.cardIcon {
-  font-size: 1rem;
-  color: var(--green-dim);
-  line-height: 1;
+.cell:hover {
+  background: var(--bg-alt);
 }
 
-.cardLabel {
-  font-size: 1rem;
+.cellLabel {
+  font-family: var(--sans);
+  font-size: 15px;
   font-weight: 600;
-  color: var(--text);
+  color: var(--ink);
   line-height: 1.3;
 }
 
-.cardDetail {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.7;
-  font-weight: 300;
+.cellDetail {
+  font-family: var(--sans);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--ink-muted);
+  line-height: 1.65;
 }
 
-.callout {
+.chips {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid var(--border);
-  background: var(--bg-card);
-  border-radius: var(--radius-lg);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  line-height: 1.6;
-  font-weight: 300;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-.calloutIcon {
-  color: var(--green-dim);
-  flex-shrink: 0;
-  margin-top: 0.1rem;
+.chipsLabel {
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink-muted);
 }
 
-.calloutStrong {
-  color: var(--text);
+.chip {
+  font-family: var(--sans);
+  font-size: 12px;
   font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 3px;
+  letter-spacing: 0.01em;
+}
+
+.chipSep {
+  color: var(--border);
+  font-size: 14px;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 640px) {
   .section {
-    padding: 4rem 1.25rem;
-  }
-  .grid {
-    grid-template-columns: 1fr;
+    padding: 64px 20px;
   }
 }

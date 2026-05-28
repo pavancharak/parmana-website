@@ -2,25 +2,19 @@ import styles from './Nav.module.css'
 
 export default function Nav() {
   return (
-    <header className={styles.header}>
-      <nav className={styles.nav}>
-        <a href="/" className={styles.logo}>
-          <span className={styles.logoMark}>P</span>
-          <span className={styles.logoWord}>parmana</span>
+    <header className={styles.nav}>
+      <div className={styles.inner}>
+        <a href="#" className={styles.wordmark}>
+          <span className={styles.dot} aria-hidden="true" />
+          Parmana
         </a>
-        <div className={styles.links}>
-          <a href="#how-it-works">How it works</a>
-          <a href="#use-cases">Use cases</a>
-          <a
-            href="https://parmanasystems.mintlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.docsLink}
-          >
-            Docs ↗
-          </a>
-        </div>
-      </nav>
+        <nav className={styles.links} aria-label="Primary navigation">
+          <a href="#how-it-works" className={styles.link}>How it works</a>
+          <a href="#use-cases" className={styles.link}>Use cases</a>
+          <a href="#the-name" className={styles.link}>The name</a>
+          <a href="#start" className={styles.cta}>Start building</a>
+        </nav>
+      </div>
     </header>
   )
 }

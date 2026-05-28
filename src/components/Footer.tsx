@@ -4,30 +4,26 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.inner}>
-        <div className={styles.left}>
-          <div className={styles.logo}>
-            <span className={styles.logoMark}>P</span>
-            <span className={styles.logoWord}>parmana</span>
-          </div>
-          <p className={styles.tagline}>
-            Deterministic governance for AI execution. Open source, self-hosted.
-          </p>
-        </div>
-
-        <div className={styles.links}>
-          <a href="https://parmanasystems.mintlify.app" target="_blank" rel="noopener noreferrer">Docs</a>
-          <a href="https://parmanasystems.mintlify.app" target="_blank" rel="noopener noreferrer">Quickstart</a>
-          <a href="https://parmanasystems.mintlify.app" target="_blank" rel="noopener noreferrer">Examples</a>
-          <a href="https://parmanasystems.mintlify.app" target="_blank" rel="noopener noreferrer">API reference</a>
-        </div>
-      </div>
-
-      <div className={styles.bottom}>
-        <span>© 2025 Parmana Systems</span>
-        <span className={styles.sep}>·</span>
-        <span>Apache-2.0 License</span>
-        <span className={styles.sep}>·</span>
-        <span>Ed25519 · append-only · offline-verifiable</span>
+        <span className={styles.left}>Parmana Systems — Apache-2.0</span>
+        <nav className={styles.links} aria-label="Footer navigation">
+          <a href="#how-it-works">How it works</a>
+          <a href="#use-cases">Use cases</a>
+          <a href="#the-name">The name</a>
+          <a
+            href="https://github.com/pavancharak/parmanasystems/tree/main/docs"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Docs
+          </a>
+          <a
+            href="https://github.com/pavancharak/parmanasystems"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+        </nav>
       </div>
     </footer>
   )

@@ -2,34 +2,19 @@ import styles from './LogsComparison.module.css'
 
 const rows = [
   {
-    question: 'When it acts',
-    logs: 'After the action runs',
-    parmana: 'Before the action runs',
-    parmanaBold: true,
+    label: 'When it acts',
+    logs: 'After the fact.',
+    parmana: 'Before the action runs.',
   },
   {
-    question: 'Can it stop a bad action',
-    logs: 'No',
-    parmana: 'Yes fails closed',
-    parmanaBold: true,
+    label: "Can it stop a bad action?",
+    logs: "No. It only takes notes.",
+    parmana: "Yes. It blocks, and fails closed.",
   },
   {
-    question: 'Who can verify',
-    logs: 'Only people who trust your servers',
-    parmana: 'Anyone with a public key',
-    parmanaBold: true,
-  },
-  {
-    question: 'Under tampering',
-    logs: "Silently edited — you'd never know",
-    parmana: 'Proof breaks visibly verification fails',
-    parmanaBold: true,
-  },
-  {
-    question: 'What it proves',
-    logs: 'A line was written',
-    parmana: 'What was authorized, by which rules, and when',
-    parmanaBold: true,
+    label: "Who can verify it?",
+    logs: "Only people who trust your servers.",
+    parmana: "Anyone, with just a key.",
   },
 ]
 
@@ -37,56 +22,53 @@ export default function LogsComparison() {
   return (
     <section className={styles.section}>
       <div className={styles.inner}>
-        <p className={styles.eyebrow}>COMMON QUESTION</p>
-        <h2 className={styles.heading}>"Isn't this just logging?"</h2>
-        <p className={styles.sub}>
-          No. Here's the exact difference.
+        <p className={styles.eyebrow}>But isn't this just logging?</p>
+        <h2 className={styles.h2}>
+          A log records what happened. Parmana proves it — and could have stopped it.
+        </h2>
+        <p className={styles.body}>
+          Logs are written by the system you're asking everyone to trust. Parmana is different on every count.
         </p>
 
-        {/* Desktop table */}
         <div className={styles.tableWrap}>
           <table className={styles.table}>
             <thead>
               <tr>
-                <th className={styles.thQuestion}></th>
+                <th className={styles.thLabel} />
                 <th className={styles.thLogs}>Ordinary logs</th>
                 <th className={styles.thParmana}>Parmana</th>
               </tr>
             </thead>
             <tbody>
-              {rows.map(row => (
-                <tr key={row.question} className={styles.tr}>
-                  <td className={styles.tdQuestion}>{row.question}</td>
+              {rows.map((row) => (
+                <tr key={row.label} className={styles.tr}>
+                  <td className={styles.tdLabel}>{row.label}</td>
                   <td className={styles.tdLogs}>{row.logs}</td>
-                  <td className={`${styles.tdParmana} ${row.parmanaBold ? styles.tdParmanaGreen : ''}`}>
-                    {row.parmana}
-                  </td>
+                  <td className={styles.tdParmana}>{row.parmana}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        {/* Mobile cards */}
-        <div className={styles.cards}>
-          {rows.map(row => (
-            <div key={row.question} className={styles.mobileCard}>
-              <div className={styles.mobileQuestion}>{row.question}</div>
+        <div className={styles.mobileCards}>
+          {rows.map((row) => (
+            <div key={row.label} className={styles.mobileCard}>
+              <p className={styles.mobileLabel}>{row.label}</p>
               <div className={styles.mobileRow}>
                 <div className={styles.mobileCol}>
-                  <div className={styles.mobileColLabel}>Ordinary logs</div>
-                  <div className={styles.mobileColVal}>{row.logs}</div>
+                  <span className={styles.mobileColHead}>Ordinary logs</span>
+                  <span className={styles.mobileVal}>{row.logs}</span>
                 </div>
                 <div className={styles.mobileDivider} aria-hidden="true" />
                 <div className={styles.mobileCol}>
-                  <div className={styles.mobileColLabel}>Parmana</div>
-                  <div className={`${styles.mobileColVal} ${styles.mobileColGreen}`}>{row.parmana}</div>
+                  <span className={styles.mobileColHead}>Parmana</span>
+                  <span className={`${styles.mobileVal} ${styles.mobileValAccent}`}>{row.parmana}</span>
                 </div>
               </div>
             </div>
           ))}
         </div>
-
       </div>
     </section>
   )
