@@ -9,7 +9,7 @@ export default function CallToAction() {
         <p className={styles.sub}>Give it room to think. Keep control of what it does.</p>
         <div className={styles.ctas}>
           <a
-            href="https://github.com/pavancharak/parmanasystems/blob/main/QUICKSTART.md"
+            href="https://parmanasystems.mintlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"
@@ -17,7 +17,7 @@ export default function CallToAction() {
             Start building →
           </a>
           <a
-            href="https://github.com/pavancharak/parmanasystems/tree/main/docs"
+            href="https://parmanasystems.mintlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"

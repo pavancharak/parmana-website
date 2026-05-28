@@ -16,7 +16,7 @@ export default function Hero() {
         </p>
         <div className={styles.ctas}>
           <a
-            href="https://github.com/pavancharak/parmanasystems/blob/main/QUICKSTART.md"
+            href="https://parmanasystems.mintlify.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary"

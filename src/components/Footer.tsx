@@ -10,7 +10,7 @@ export default function Footer() {
           <a href="#use-cases">Use cases</a>
           <a href="#the-name">The name</a>
           <a
-            href="https://github.com/pavancharak/parmanasystems/tree/main/docs"
+            href="https://parmanasystems.mintlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >

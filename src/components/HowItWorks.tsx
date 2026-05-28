@@ -40,8 +40,8 @@ export default function HowItWorks() {
         <p className={styles.eyebrow}>How It Works</p>
         <h2 className={styles.h2}>Every action passes through one gate.</h2>
         <p className={styles.body}>
-          The AI proposes. Parmana enforces your rules — the same way,
-          every time — and leaves behind proof anyone can check.
+          The AI proposes. Parmana enforces your rules the same way,
+          every time and leaves behind proof anyone can check.
         </p>
         <div className={styles.flow}>
           {steps.map((step, i) => (
