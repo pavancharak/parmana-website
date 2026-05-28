@@ -7,7 +7,7 @@ const cells = [
   },
   {
     label: 'Your keys',
-    detail: 'You generate and hold the signing keys. No one can produce a valid decision — including us.',
+    detail: 'You generate and hold the signing keys. No one can produce a valid decision including us.',
   },
   {
     label: 'Your audit trail',
