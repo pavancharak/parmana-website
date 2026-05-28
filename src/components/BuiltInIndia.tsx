@@ -11,7 +11,7 @@ export default function BuiltInIndia() {
         </div>
         <h2 className={styles.h2}>Built in India. By all of us.</h2>
         <p className={styles.sub}>
-          Open-source trust infrastructure — made in India, free for everyone, owned by no one.
+          Open-source trust infrastructure , made in India, free for everyone, owned by no one.
         </p>
       </div>
     </section>

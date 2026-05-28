@@ -9,12 +9,12 @@ const cases = [
   {
     num: '02',
     title: 'Rewind a decision years later.',
-    body: "A claim approved today is questioned in 2031. Re-run it with the rules that were in force then, and get an identical result — proving the decision was never quietly changed.",
+    body: "A claim approved today is questioned in 2031. Re-run it with the rules that were in force then, and get an identical result proving the decision was never quietly changed.",
   },
   {
     num: '03',
     title: "Prove the AI couldn't have done it.",
-    body: "A regulator asks: could it have approved this without a human? You don't show a clean log — you prove the action was impossible, blocked by policy, with signed evidence of every attempt.",
+    body: "A regulator asks: could it have approved this without a human? You don't show a clean log you prove the action was impossible, blocked by policy, with signed evidence of every attempt.",
   },
 ]
 
@@ -25,7 +25,7 @@ export default function UseCases() {
         <p className={styles.eyebrow}>What You Can Prove</p>
         <h2 className={styles.h2}>Guarantees, not features.</h2>
         <p className={styles.body}>
-          These aren't features. They're structural guarantees — things that hold because
+          These aren't features. They're structural guarantees things that hold because
           of how Parmana works, not because we say so.
         </p>
         <div className={styles.grid}>

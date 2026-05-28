@@ -10,7 +10,7 @@ export default function ParmanaOrigin() {
           <h2 className={styles.h2}>Parmana means proof.</h2>
         </div>
         <p className={styles.body}>
-          From the Sanskrit pramana — a valid means of knowing something is true.
+          From the Sanskrit pramana , a valid means of knowing something is true.
           That is the whole idea: trust you don't have to take on faith. Built in the
           open, free for anyone, anywhere to inspect, run, and verify.
         </p>

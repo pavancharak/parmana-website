@@ -12,7 +12,7 @@ export default function Hero() {
           </span>
         </h1>
         <p className={styles.sub}>
-          AI reasons freely. Parmana controls what actually runs — and signs proof anyone can verify.
+          AI reasons freely. Parmana controls what actually runs and signs proof anyone can verify.
         </p>
         <div className={styles.ctas}>
           <a

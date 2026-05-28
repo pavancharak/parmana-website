@@ -24,7 +24,7 @@ export default function LogsComparison() {
       <div className={styles.inner}>
         <p className={styles.eyebrow}>But isn't this just logging?</p>
         <h2 className={styles.h2}>
-          A log records what happened. Parmana proves it — and could have stopped it.
+          A log records what happened. Parmana proves it and could have stopped it.
         </h2>
         <p className={styles.body}>
           Logs are written by the system you're asking everyone to trust. Parmana is different on every count.

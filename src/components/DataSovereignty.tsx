@@ -22,7 +22,7 @@ export default function DataSovereignty() {
         <p className={styles.eyebrow}>Where It Runs</p>
         <h2 className={styles.h2}>Your data never leaves your servers.</h2>
         <p className={styles.body}>
-          Parmana runs entirely inside your own infrastructure — there is nothing to phone home to.
+          Parmana runs entirely inside your own infrastructure there is nothing to phone home to.
         </p>
         <div className={styles.grid}>
           {cells.map((cell) => (
@@ -33,7 +33,7 @@ export default function DataSovereignty() {
           ))}
         </div>
         <div className={styles.chips}>
-          <span className={styles.chipsLabel}>Built for regulated environments —</span>
+          <span className={styles.chipsLabel}>Built for regulated environments </span>
           <span className={styles.chip}>inspect every line</span>
           <span className={styles.chipSep} aria-hidden="true">·</span>
           <span className={styles.chip}>self-host or air-gap</span>
